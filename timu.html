@@ -144,7 +144,6 @@
             <div v-if='answer&&result===2' class='result info'>{{(String(timu.answer).length>16?'简答':'填空')}}题暂不支持回答
             </div>
             <div v-if='answer' class="answer">答案：{{timu.answer}}</div>
-            <div v-if='answer' class="analysis">解析：{{timu.analysis?timu.analysis:'该答案暂无解析'}}</div>
         </Card>
         <i-button class="huida" type="primary" :disabled='daan.length===0' @click='huida' size="large" long>确定答案
         </i-button>
